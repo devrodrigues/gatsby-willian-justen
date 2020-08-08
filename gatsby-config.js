@@ -52,6 +52,7 @@ module.exports = {
           //esse aqui não precisa de nenhuma configuração
           //veja na doc que o lazy load precisa do 'lazysizes' e colocar esse em gatsby-browser
           `gatsby-remark-lazy-load`,
+          `gatsby-remark-prismjs`,
         ],
       },
     },
