@@ -15,6 +15,8 @@ a=3
 puts a
 ```
 
+![Ocean - descrição bacana aqui para acessibilidade](/assets/img/ocean.jpg)
+
 ## Fusce a metus eu
 
 Pellentesque `sed` sapien lorem, at lacinia urna. In hac habitasse platea dictumst. Vivamus vel justo in leo laoreet ullamcorper non vitae lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum ullamcorper rutrum.
@@ -38,6 +40,10 @@ Pellentesque sed sapien lorem, at lacinia urna. In hac habitasse platea dictumst
 - Sit
 - amet
 
+![Desert - descrição bacana aqui para acessibilidade](/assets/img/desert.jpg)
+
 #### Sed enim mi
 
 Proin suscipit luctus orci placerat fringilla. Donec hendrerit laoreet risus eget adipiscing. Suspendisse in urna ligula, a volutpat mauris. Sed enim mi, bibendum eu pulvinar vel, sodales vitae dui. Pellentesque sed sapien lorem, at lacinia urna. In hac habitasse platea dictumst. Vivamus vel justo in leo laoreet ullamcorper non vitae lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum ullamcorper rutrum.
+
+![Lake - descrição bacana aqui para acessibilidade](/assets/img/lake.jpg)
