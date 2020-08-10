@@ -3,6 +3,7 @@ import React from "react";
 import * as S from "./styled";
 import algoliasearch from "algoliasearch/lite";
 import { InstantSearch, SearchBox, Hits, Stats } from "react-instantsearch-dom";
+import Hit from "./Hit";
 
 const algolia = {
   appId: process.env.GATSBY_ALGOLIA_APP_ID,
@@ -23,7 +24,7 @@ const Search = () => (
           },
         }}
       />
-      <Hits />
+      <Hits hitComponent={Hit} />
     </InstantSearch>
   </S.SearchWrapper>
 );
