@@ -1,3 +1,6 @@
+require("dotenv").config();
+const queries = require("./src/utils/algolia_queries");
+
 module.exports = {
   siteMetadata: {
     title: `Curso Gatsby`,
@@ -58,6 +61,18 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-algolia-search`,
+      options: {
+        //os dados .env abaixo só conseguirão ser lidos por causa do dotenv
+        appId: process.env.ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_ADMIN_KEY, //processo de inserir dados, devendo então ser o admin
+        indexName: process.env.ALGOLIA_INDEX_NAME, // for all queries
+        queries,
+        chunkSize: 10000, // default: 1000 - quantidade de dados por vez,
+        enablePartialUpdates: true, // default: false - importante para habilitar update parcial!
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
