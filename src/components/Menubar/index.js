@@ -42,6 +42,7 @@ const Menubar = () => {
             }
             window.__setPreferredTheme(isDarkMode ? "light" : "dark");
           }}
+          className={theme}
         >
           <Icons.Light />
         </S.MenuBarItem>
