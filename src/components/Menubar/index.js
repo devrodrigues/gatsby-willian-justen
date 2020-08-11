@@ -5,17 +5,21 @@ import * as S from "./styled";
 
 const Menubar = () => {
   //uso de hooks do React
-  //passsamos um valor default 'null' para a variável 'theme'
+  //passamos um valor default 'null' para a variável 'theme'
   const [theme, setTheme] = useState(null);
+  const [display, setDisplay] = useState(null);
 
   const isDarkMode = theme === "dark";
+  const isListMode = display === "list";
 
   //lembre-se que o useEffect funciona da mesma forma que o componentDidMount, que era executado
   //sempre que o componente era renderizado na tela
   useEffect(() => {
     setTheme(window.__theme);
+    setDisplay(window.__display);
     //toda vez que o tema mudar, abaixo vai mudar a variável do tema
     window.__onThemeChange = () => setTheme(window.__theme);
+    window.__onDisplayChange = () => setDisplay(window.__display);
     //o [] informa que esse código será rodado só uma vez quando o componente renderizar
   }, []);
 
@@ -44,8 +48,13 @@ const Menubar = () => {
         >
           <Icons.Light />
         </S.MenuBarItem>
-        <S.MenuBarItem title="Mudar visualização">
-          <Icons.Grid />
+        <S.MenuBarItem
+          title="Mudar visualização"
+          onClick={() => {
+            window.__setPreferredDisplay(isListMode ? "grid" : "list");
+          }}
+        >
+          {isListMode ? <Icons.Grid /> : <Icons.List />}
         </S.MenuBarItem>
         <S.MenuBarItem title="Ir pra o topo">
           <Icons.Arrow />
