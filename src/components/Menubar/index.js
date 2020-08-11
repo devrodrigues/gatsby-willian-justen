@@ -37,9 +37,7 @@ const Menubar = () => {
         <S.MenuBarItem
           title="Mudar o tema"
           onClick={() => {
-            {
-              /*abaixo ele faz uma verificação de qual tema está antes do click*/
-            }
+            /*abaixo ele faz uma verificação de qual tema está antes do click*/
             window.__setPreferredTheme(isDarkMode ? "light" : "dark");
           }}
           className={theme}
