@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 import Icons from "./icons";
 import * as S from "./styled";
 
+import getThemeColor from "../../utils/get-theme-color";
+
 const Menubar = () => {
   //uso de hooks do React
   //passamos um valor default 'null' para a variável 'theme'
@@ -30,7 +32,7 @@ const Menubar = () => {
           to="/"
           cover
           direction="right"
-          bg="#16202c"
+          bg={getThemeColor()}
           duration={0.6}
           title="Voltar para Home"
         >
@@ -42,7 +44,7 @@ const Menubar = () => {
           to="/search/"
           cover
           direction="right"
-          bg="#16202c"
+          bg={getThemeColor()}
           duration={0.6}
           title="Voltar para Home"
           title="Pesquisar"

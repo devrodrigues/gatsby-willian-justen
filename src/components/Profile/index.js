@@ -4,6 +4,8 @@ import { useStaticQuery, graphql } from "gatsby";
 import Avatar from "../Avatar";
 import * as S from "./styled";
 
+import getThemeColor from "../../utils/get-theme-color";
+
 const Profile = () => {
   const {
     site: {
@@ -27,7 +29,7 @@ const Profile = () => {
         to={"/"}
         cover
         direction="left"
-        bg="#16202c"
+        bg={getThemeColor()}
         duration={0.6}
       >
         <Avatar />
