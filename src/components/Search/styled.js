@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 
 /*'ais' de Algolia Instant Search*/
 //essa é a forma correta de boa prática, extendendo e editando a classe
@@ -9,6 +10,7 @@ export const SearchWrapper = styled.section`
   flex-direction: column;
   width: 100%;
   transition: opacity 0.4s;
+
   .ais-InstantSearch__root {
     display: flex;
     flex-direction: column;
@@ -18,9 +20,17 @@ export const SearchWrapper = styled.section`
   .ais-SearchBox,
   .ais-Stats {
     padding: 0.5rem 3rem;
+
+    ${media.lessThan("large")`
+      padding: 0.5rem 1rem;
+    `}
   }
   .ais-SearchBox {
     padding-top: 6rem;
+
+    ${media.lessThan("large")`
+      padding-top: 1rem;
+    `}
   }
   .ais-Stats {
     color: var(--texts);
