@@ -9,6 +9,7 @@ module.exports = {
     author: `@devrodrigues`,
   },
   plugins: [
+    `gatsby-plugin-transition-link`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     // abaixo precisa ser a primeira config para funcionar com gatsby-remark-images
