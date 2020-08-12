@@ -4,6 +4,7 @@ title: Post antigo
 description: And I'm not lorem sure lorem
 category: JS
 background: "blue"
+image: "/assets/img/desert.jpg"
 ---
 
 # Lorem ipsum

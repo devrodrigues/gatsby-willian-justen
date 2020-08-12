@@ -7,6 +7,8 @@ module.exports = {
     position: "Frontend Developer",
     description: `A blog about frontend development.`,
     author: `@devrodrigues`,
+    //siteUrl pois na imagem precisaremos da url - isso é para o SEO
+    siteUrl: `https://devrodrigues.com.br`,
   },
   plugins: [
     `gatsby-plugin-transition-link`,
